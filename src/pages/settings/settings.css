@@ -1,22 +1,30 @@
 .settings {
   display: flex;
+  /* height: auto; */
 }
 
 .settingsWrapper {
+  
   flex: 9;
+  height: auto;
+  margin: 50px;
+  margin-top: 20px;
   padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .settingsTitle {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
 }
 
 .settingsTitleUpdate {
   font-size: 30px;
   margin-bottom: 20px;
-  color: lightcoral;
+  color: #4682A9;
 }
 
 .settingsTitleDelete {
@@ -28,6 +36,7 @@
 .settingsForm {
   display: flex;
   flex-direction: column;
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
 }
 
 .settingsPP {
@@ -47,7 +56,7 @@
 .settingsPPIcon {
   width: 25px;
   height: 25px;
-  padding: 5px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +64,7 @@
   border-radius: 50%;
   margin-left: 10px;
   color: white;
-  background-color: lightcoral;
+  background-color: #4682A9;
   cursor: pointer;
 }
 
@@ -76,9 +85,11 @@
   color: gray;
   margin-top: 10px;
   margin-bottom: 10px;
-  height: 30px;
+  height: 40px;
+  padding: 10px;
   border: none;
-  border-bottom: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .settingsSubmitButton {
@@ -87,7 +98,7 @@
   border: none;
   border-radius: 10px;
   color: white;
-  background-color: teal;
+  background-color: #4682A9;
   padding: 10px;
   margin-top: 20px;
   cursor: pointer;
@@ -97,5 +108,5 @@
 }
 
 .settingsSubmitButton:hover {
-  background-color: rgb(1, 114, 114);
+  background-color: rgb(10, 55, 85);
 }

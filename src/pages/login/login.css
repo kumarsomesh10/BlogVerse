@@ -1,25 +1,29 @@
 .login {
-  height: calc(100vh - 50px);
+  height: 88vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
+  /* background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"); */
   background-size: cover;
 }
 
 .loginTitle {
+  margin-top: -60px;
   font-size: 50px;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
 }
 
 .loginForm {
   margin-top: 20px;
+  width: 30vw;
   display: flex;
   flex-direction: column;
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
 }
 
 .loginForm > label {
@@ -27,10 +31,14 @@
 }
 
 .loginInput {
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
   padding: 10px;
-  background-color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .loginInput:focus {
@@ -38,9 +46,11 @@
 }
 
 .loginButton {
+  width: 10vw;
   margin-top: 20px;
+  margin-left: 30%;
   cursor: pointer;
-  background-color: lightcoral;
+  background-color: #4682A9;
   color: white;
   padding: 10px;
   border: none;
@@ -48,14 +58,23 @@
   text-align: center;
 }
 
+.loginButton:hover {
+  background-color: rgb(10, 55, 85);
+}
+
 .loginRegisterButton {
   position: absolute;
-  top: 60px;
+  top: 90px;
   right: 20px;
-  background-color: teal;
+  width: 10vw;
+  background-color: #4682A9;
   cursor: pointer;
   padding: 10px;
   border: none;
   color: white;
   border-radius: 10px;
+}
+
+.loginRegisterButton:hover {
+  background-color: rgb(10, 55, 85);
 }
